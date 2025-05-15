@@ -7,10 +7,25 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Assets\Images\Cog.svg" />
+    <None Remove="Assets\Images\DoubleArrow.svg" />
+    <None Remove="Assets\Images\Export.svg" />
+    <None Remove="Assets\Images\Lock.svg" />
+    <None Remove="Assets\Images\Monitor.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AvaloniaResource Include="Assets\Images\Cog.svg" />
+    <AvaloniaResource Include="Assets\Images\DoubleArrow.svg" />
+    <AvaloniaResource Include="Assets\Images\Export.svg" />
+    <AvaloniaResource Include="Assets\Images\Lock.svg" />
+    <AvaloniaResource Include="Assets\Images\Monitor.svg" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="11.3.0" />
     <PackageReference Include="Avalonia.Desktop" Version="11.3.0" />
+    <PackageReference Include="Avalonia.Svg.skia" Version="11.3.0" />
     <PackageReference Include="Avalonia.Themes.Fluent" Version="11.3.0" />
     <PackageReference Include="Avalonia.Fonts.Inter" Version="11.3.0" />
     <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
